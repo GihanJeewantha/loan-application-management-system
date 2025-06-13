@@ -28,37 +28,6 @@ This system can serve as a showcase for core development skills, including backe
 * **CSS3 (Tailwind CSS)**: For styling and responsive design.
 * **JavaScript (ES6+)**: For dynamic behavior and interacting with the backend API.
 
-## Project Structure
-
-
-loan-application-backend/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── mybank/
-│   │   │           └── loanapplicationbackend/
-│   │   │               ├── LoanApplicationBackendApplication.java  // Main Spring Boot entry point
-│   │   │               ├── model/                              // JPA Entities (LoanApplication)
-│   │   │               │   └── LoanApplication.java
-│   │   │               ├── repository/                         // Spring Data JPA Repositories
-│   │   │               │   └── LoanApplicationRepository.java
-│   │   │               ├── service/                            // Business Logic Services
-│   │   │               │   └── LoanApplicationService.java
-│   │   │               └── controller/                         // REST API Controllers
-│   │   │                   └── LoanApplicationController.java
-│   │   └── resources/
-│   │       ├── application.properties                          // Database & application configuration
-│   │       └── static/                                         // Frontend static files served by Spring Boot
-│   │           ├── index.html
-│   │           ├── css/
-│   │           │   └── style.css
-│   │           └── js/
-│   │               └── script.js
-│   └── test/
-├── pom.xml                                                     // Maven project configuration
-└── README.md                                                   // This file
-
 
 ## Setup and Running the Application
 
