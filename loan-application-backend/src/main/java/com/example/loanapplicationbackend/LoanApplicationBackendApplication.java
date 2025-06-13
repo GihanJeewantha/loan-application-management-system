@@ -1,13 +1,13 @@
-package com.lams.loan_application_management_system;
+package com.example.loanapplicationbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LoanApplicationManagementSystemApplication {
+public class LoanApplicationBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LoanApplicationManagementSystemApplication.class, args);
+		SpringApplication.run(LoanApplicationBackendApplication.class, args);
 	}
 
 }
