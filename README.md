@@ -2,7 +2,6 @@
 
 This project is a simple, full-stack web application for managing loan applications. It features a Spring Boot backend with a RESTful API, a MySQL database for data persistence, and a pure HTML, CSS, and JavaScript frontend.
 
-This system can serve as a showcase for core development skills, including backend API development, database integration, and basic frontend interaction, making it an excellent addition to a graduate trainee's portfolio.
 
 ## Features
 
@@ -16,8 +15,8 @@ This system can serve as a showcase for core development skills, including backe
 ## Technologies Used
 
 ### Backend (Spring Boot)
-* **Java 17+**
-* **Spring Boot 3.3.1+**: Framework for building robust web applications.
+* **Java 21+**
+* **Spring Boot 3.5.0+**: Framework for building robust web applications.
 * **Spring Data JPA**: Simplifies database access and provides an Object-Relational Mapping (ORM) layer.
 * **MySQL**: Relational database for storing loan application data.
 * **Maven**: Build automation tool.
@@ -35,7 +34,7 @@ Follow these steps to get the application running on your local machine.
 
 ### Prerequisites
 
-* **Java Development Kit (JDK) 17+**
+* **Java Development Kit (JDK) 21+**
 * **Apache Maven 3.8+**
 * **MySQL Server 8+**
 * **MySQL Workbench (Optional but Recommended)**
@@ -69,16 +68,16 @@ Follow these steps to get the application running on your local machine.
 
     -- Optional: Insert some sample data to test
     INSERT INTO loan_applications (applicant_name, loan_amount, application_date, status, email, phone_number, income, credit_score) VALUES
-    ('Alice Smith', 50000.00, '2024-05-01', 'PENDING', 'alice.smith@example.com', '123-456-7890', 60000.00, 720),
-    ('Bob Johnson', 120000.00, '2024-05-10', 'APPROVED', 'bob.j@example.com', '987-654-3210', 85000.00, 780),
-    ('Charlie Brown', 25000.00, '2024-05-15', 'REJECTED', 'charlie.b@example.com', '555-123-4567', 40000.00, 600);
+    ('Shakila', 50000.00, '2024-05-01', 'PENDING', 'shakila@gmail.com', '123-456-7890', 60000.00, 720),
+    ('pavan', 120000.00, '2024-05-10', 'APPROVED', 'pavan@gmail.com', '987-654-3210', 85000.00, 780),
+    ('Gihan', 25000.00, '2024-05-15', 'REJECTED', 'gihan@gmail.com', '555-123-4567', 40000.00, 600);
     ```
 
 ### 2. Spring Boot Backend Setup
 
 1.  **Clone the repository:** (Once you push this project to GitHub)
     ```bash
-    git clone [https://github.com/yourusername/loan-application-management-system.git](https://github.com/yourusername/loan-application-management-system.git)
+    git clone [https://github.com/GihanJeewantha/loan-application-management-system.git](https://github.com/GihanJeewantha/loan-application-management-system.git)
     cd loan-application-management-system/loan-application-backend
     ```
     *(If you haven't pushed yet, just navigate to the `loan-application-backend` directory you unzipped from Spring Initializr)*
@@ -132,8 +131,8 @@ The Spring Boot backend exposes the following RESTful endpoints:
 | :----- | :------------------- | :-------------------------------- | :-------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
 | `GET`  | `/api/loans`         | Get all loan applications         | None                                                                                                                  | `[{ id, applicantName, loanAmount, ... }, ...]`                                                                    |
 | `GET`  | `/api/loans/{id}`    | Get loan application by ID        | None                                                                                                                  | `{ id, applicantName, loanAmount, ... }` (or 404 if not found)                                                    |
-| `POST` | `/api/loans`         | Create a new loan application     | `{ "applicantName": "John Doe", "loanAmount": 10000.00, "applicationDate": "2024-06-14", "status": "PENDING", ... }` | `{ id, applicantName, loanAmount, ... }` (newly created loan)                                                      |
-| `PUT`  | `/api/loans/{id}`    | Update an existing loan application | `{ "applicantName": "John Doe", "loanAmount": 12000.00, "status": "APPROVED", ... }`                                   | `{ id, applicantName, loanAmount, ... }` (updated loan) (or 404 if not found)                                      |
+| `POST` | `/api/loans`         | Create a new loan application     | `{ "applicantName": "gihan", "loanAmount": 10000.00, "applicationDate": "2024-06-14", "status": "PENDING", ... }` | `{ id, applicantName, loanAmount, ... }` (newly created loan)                                                      |
+| `PUT`  | `/api/loans/{id}`    | Update an existing loan application | `{ "applicantName": "gihan", "loanAmount": 12000.00, "status": "APPROVED", ... }`                                   | `{ id, applicantName, loanAmount, ... }` (updated loan) (or 404 if not found)                                      |
 | `DELETE`| `/api/loans/{id}`   | Delete a loan application by ID   | None                                                                                                                  | No Content (204) on success (or 404 if not found)                                                                  |
 
 ## Contributing
@@ -142,4 +141,4 @@ Feel free to fork this repository, make improvements, and submit pull requests.
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source 
